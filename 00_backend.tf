@@ -44,9 +44,3 @@ provider "azurerm" {
 provider "databricks" {
   host = azurerm_databricks_workspace.this.workspace_url
 }
-
-provider "databricks" {
-  alias      = "accounts"
-  host       = "https://accounts.azuredatabricks.net"
-  account_id = "aeb19728-29a4-4e25-a40f-1fd092cec773"
-}
